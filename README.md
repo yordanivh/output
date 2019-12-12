@@ -51,7 +51,7 @@ This repo is valuable in order to get an overview of how the output command work
  terraform apply
 ```
 
-*At the end of the apply, all the outputs will be computer, and will be displayed at the end of the apply command:
+* At the end of the apply, all the outputs will be computer, and will be displayed at the end of the apply command:
 ```
 Outputs:
 
@@ -61,7 +61,7 @@ public_dns = ec2-3-15-166-108.us-east-2.compute.amazonaws.com
 public_ip = 3.15.166.108
 ```
 
-*If you would like to display just one output in particular, you can use `terraform output <name>`
+* If you would like to display just one output in particular, you can use `terraform output <name>`
 example:
 
 ```
