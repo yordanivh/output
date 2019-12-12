@@ -49,7 +49,26 @@ This repo is valuable in order to get an overview of how the output command work
  * Run Terraform apply to create the resources
  ```
  terraform apply
- ```
+```
+
+At the end of the apply, all the outputs will be computer, and will be displayed at the end of the apply command:
+```
+Outputs:
+
+private_dns = ip-172-31-7-82.us-east-2.compute.internal
+private_ip = 172.31.7.82
+public_dns = ec2-18-223-237-33.us-east-2.compute.amazonaws.com
+public_ip = 18.223.237.33
+```
+
+If you would like to display just one output in particular, you can use `terraform output <name>`
+example:
+
+```
+terraform output public_dns
+ec2-18-223-237-33.us-east-2.compute.amazonaws.com
+```
+
 
 * To destroy the created resources
 
